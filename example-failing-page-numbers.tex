@@ -11,9 +11,19 @@
 \babelfont[polutonikogreek]{rm}%
   [Ligatures=TeX,Contextuals=Alternate]{SBL BibLit}
 \usepackage{csquotes}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% BibLaTex options
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% is this redundant with the usepackage below? 
 \PassOptionsToPackage{indexing=cite}{biblatex}
 % Pass jblstyle to sbl-paper if you want double spaced footnotes
+
 \usepackage{sbl-paper}
+% Not sure if I want to use this instead...it's what is used in the file to generate the docs AND in biblatex-sbl-examples.tex, but NOT used in the example file sbl-paper.tex. So I'm following sbl-paper.tex for now...
+% \usepackage[style=sbl,indexing=cite]{biblatex}
+
+\usepackage[style=sbl,indexing=cite]{biblatex}
 
 \addbibresource{./bibliography/example.bib}
 \nocite{*}
@@ -128,7 +138,7 @@
 
 \subsection{Subsection}
 
-  
+More example text\autocite[See][51]{bakerJubileeMillenniumHoly1998}.
 Example text.\footnote{
   Some working pagination: \cites[497]{oswaltBookIsaiahChapters1998}[268-269]{kimReadingIsaiahLiterary2016}. 
   A breaking pagination: \cite[51-55]{bakerJubileeMillenniumHoly1998}. % TODO not showing hte page number for some reason

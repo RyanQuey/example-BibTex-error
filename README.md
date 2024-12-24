@@ -1,3 +1,7 @@
+Sample latex project to quickly show where errors are happening. 
+- Useful for sharing code, to post in SO
+- Useful for debugging also. Makes things simple. 
+
 # Edit
 
 - Vim works great, there's a plugin to get LaTex support for color etc
